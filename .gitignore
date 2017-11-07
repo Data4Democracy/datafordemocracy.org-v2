@@ -1,0 +1,11 @@
+*.DS_Store
+# Thumbnails
+._*
+
+_site
+
+_site/
+.sass-cache/
+.jekyll-metadata
+
+_site/*

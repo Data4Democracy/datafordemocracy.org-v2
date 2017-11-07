@@ -1,0 +1,127 @@
+---
+layout: default
+title: Projects
+section_id: projects
+works:
+  - image: images/projects/campaign-spending.png
+    title: Campaign Spending
+    link_to: projects/campaign-spending.html
+    klass: web-design
+    desc: ProPublica
+  - image: images/projects/climate-challenge.png
+    title: Climate Action Plan
+    link_to: projects/cap-san-diego.html
+    klass: web-design print
+    desc: City of San Diego
+  - image: images/projects/code-of-ethics-small.jpg
+    title: Code of Ethics
+    link_to: projects/ethics.html
+    klass: web-design
+    desc: Data for Democracy is partnering with Bloomberg and BrightHive to develop a code of ethics for data scientists.
+  - image: images/projects/crash-modeling.png
+    title: Crash Modeling
+    link_to: projects/boston-crash-modeling.html
+    klass: web-design print
+    desc: City of Boston
+  - image: images/projects/drug-spending.png
+    title: Drug Spending
+    link_to: projects/drug-spending.html
+    klass: brand
+    desc: Medicare prescription expenditures
+  - image: images/projects/election-transparency.png
+    title: Election Transparency
+    link_to: projects/election-transparency.html
+    klass: development
+    desc: County-level US election results
+  - image: images/projects/foreign-travel.png
+    title: Foreign Travel Expenditures
+    link_to: projects/foreign-travel.html
+    klass: web-design
+    desc: ProPublica
+  - image: images/projects/refugees.png
+    title: Refugees
+    link_to: projects/refugees.html
+    klass: print brand
+    desc: Internal Displacement
+  - image: images/projects/usa-dashboard.png
+    title: USA Dashboard
+    link_to: projects/usa-dashboard.html
+    klass: web-design
+    desc: KPIs for the USA
+  - image: images/projects/gerrymandering.png
+    title: Gerrymandering
+    link_to: projects/gerrymandering.html
+    klass: web-design
+    desc: Princeton Election Consortium
+---
+
+
+<div class='full parallax' style='background-image: url(images/banners/hero-city.png); color: #fff;'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Our projects" tagline="" color="#fff" class="big" %}
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
+
+<div class='full'>
+  <div class='row'>
+    <div class='twelve columns'>
+      <h3></h3>
+  <p>Data for Democracy looks for projects that have a strong collaborative nature, and leverage data and technology to create positive social impact. We engage in a mix of community-led projects, which are proposed and self-organized by Data for Democracy members, and partner-led projects, which involve more formal collaboration with city governments and local and international NGOs.</p>
+  <p>Our project work is housed at <a href="https://github.com/Data4Democracy/read-this-first/blob/master/README.md">GitHub</a>, with many of our datasets residing at <a href="https://data.world/data4democracy">data.world</a>.</p>
+    </div>
+  </div>
+</div>
+
+
+    <div class='mod modGallery'>
+      <!--
+      <div class='gallery-nav'>
+        <ul>
+          <li class='current'>
+            <a data-cat='all' href='#'>All</a>
+          </li>
+          <li>
+            <a data-cat='graphic-design' href='#'>Graphic Design</a>
+          </li>
+          <li>
+            <a data-cat='web-design' href='#'>Web Design</a>
+          </li>
+          <li>
+            <a data-cat='brand' href='#'>Brand</a>
+          </li>
+          <li>
+            <a data-cat='development' href='#'>Development</a>
+          </li>
+          <li>
+            <a data-cat='print' href='#'>Print</a>
+          </li>
+        </ul>
+      </div>
+      -->
+
+      <ul class='gallery large-block-grid-4 medium-block-grid-3 small-block-grid-2'>
+
+        {% for work in page.works %}
+          <li class="{{ work.klass }}">
+            <a href='{{ work.link_to }}'>
+              <img alt="" src="{{ work.image }}" />
+              <div class='overlay'>
+                <div class='thumb-info'>
+                  <h3>{{ work.title }}</h3>
+                  <p>{{ work.desc }}</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+
+      </ul>
+
+    </div>
+  </div>
+
+  <div class='four spacing'></div>
+</div>

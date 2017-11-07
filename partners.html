@@ -1,0 +1,55 @@
+---
+layout: default
+title: Partners
+section_id: partners
+---
+
+<div class='full parallax' style='background-image: url(images/banners/hero-love-hat.png); color: #fff;'>
+  <div class='row'>
+    <div class='twelve columns'>
+      {% include section-header.html title="Our partners" color="#fff" tagline="" class="big" %}
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
+
+<div class='full'>
+  <div class='row'>
+    <div class='twelve columns'>
+      <h3>Partnerships</h3>
+      <p>At Data for Democracy, we believe in the mantra "teamwork makes the dream work". While many of our projects are initiated and driven by our own community members, we also actively work with external partners to support their missions of achieving social change. These partnerships help to keep our community energized, and further our goal of matching our volunteers' skillsets with real-world problems.</p>
+
+      <h4>Who We Partner With</h4>
+      <p>Our partnerships run the gamut from government agencies to private organizations. For instance, we have one group working closely with the City of Boston to help develop a model aimed at <a href="https://github.com/Data4Democracy/boston-crash-modeling"> predicting car crashes</a> while another team is working with ProPublica <a href="https://github.com/Data4Democracy/house_expenditures">analyzing congressional spending</a>.</p>
+
+	<h4> Why We Partner</h4>
+
+	<p>As a community of like-minded data scientists and technologists, we are constantly looking for creative ways to apply our trade, and partnerships offer us more opportunities to do so. Just as importantly, we want to help build a stronger society, and partnerships connect us with people and organizations who are already doing meaningful and critical work in effecting social change. Through these collaborations, we can ensure that we are productively applying our abilities in the right direction to maximize our impact.</p>
+
+	<h4> How We Partner</h4>
+	<p>Collaboration is our watchword, here as in all other aspects of our work. We work closely with our Partners to ensure that the work done is the work that is most needed. We recognize and value our Partners' knowledge about the subject areas and about the problems that they wish to solve, and we benefit from their insight in every stage of the process as we work to solve these problems.</p>
+
+	<p>For each project, we assign leadership within Data for Democracy, with one or more analysts identified as Leads for each project. These Leads will work closely to understand our Partner's needs, and will communicate those needs to the broader team in the form of required tasks. Facilitators will work with these Leads to create a feedback loop with the Partner and ensure that communication flows regularly and smoothly.</p>
+
+	<p>We encourage our Partners to be active members in our Slack instance, especially in the channels specific to their project! This allows our Partners to check in and provide feedback wherever (and whenever) they feel is necessary, thus enabling work to progress more satisfactorily for all parties.</p>
+
+	<p>If you have a problem that you want solved, feel free to <a href="/contact.html"> reach out to us</a>! We would love the chance to talk to you about it, and see how we can help you and your team.</p>
+    </div>
+    <div class='twelve columns'>
+    </div>
+  </div>
+</div>
+
+  <div class='row bg-dark'>
+    <div class='large-12 columns'>
+      <div class='mod modClients' data-slides_to_show='4'>
+        <div class='clients'>
+          {% for client in site.data.clients %}
+            <div><img alt="" src="{{client.image}}" /></div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='two spacing'></div>
+</div>

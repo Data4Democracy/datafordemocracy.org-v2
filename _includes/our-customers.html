@@ -1,0 +1,24 @@
+<div class='full parallax' style='background-image: url(images/@stock/customers-bg.jpg); color: #fff;'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Our partners" color="#fff" %}
+      <div class='spacing'></div>
+      <p>
+        At Data for Democracy, we believe in the mantra "teamwork makes the dream work," and we actively work with new partners outside of our community to build stronger teams driven by the desire to solve hard problems! These partnerships keep the energy flowing in our volunteers, and help to support our goal of putting the right skillsets against the right problems.
+      </p>
+      <div class='spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <div class='mod modClients' data-slides_to_show='4'>
+        <div class='clients'>
+          {% for client in site.data.clients %}
+            <div><img alt="" src="{{client.image}}" /></div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='two spacing'></div>
+</div>
